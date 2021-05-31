@@ -1,0 +1,7 @@
+main: com.appeazethecheese.aerecipes.Main
+name: AeRecipes
+version: '1.0'
+api-version: 1.16
+author: AppeazeTheCheese
+depend:
+  - AdvancedEnchantments

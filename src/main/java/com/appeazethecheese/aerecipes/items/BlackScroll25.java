@@ -1,13 +1,12 @@
 package com.appeazethecheese.aerecipes.items;
 
-import net.minecraft.server.v1_16_R3.NBTTagCompound;
+import net.minecraft.nbt.NBTTagCompound;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
-import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_17_R1.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.RecipeChoice;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,7 +19,7 @@ public class BlackScroll25 extends ItemBase{
     public ItemStack CreateItem() {
         ItemStack item = new ItemStack(Material.INK_SAC);
 
-        net.minecraft.server.v1_16_R3.ItemStack stack = CraftItemStack.asNMSCopy(item);
+        net.minecraft.world.item.ItemStack stack = CraftItemStack.asNMSCopy(item);
         NBTTagCompound tag = stack.hasTag() ? stack.getTag() : new NBTTagCompound();
         tag.setString("success", String.valueOf(SuccessRate));
         stack.setTag(tag);

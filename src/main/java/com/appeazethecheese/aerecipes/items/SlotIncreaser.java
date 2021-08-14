@@ -1,10 +1,10 @@
 package com.appeazethecheese.aerecipes.items;
 
-import net.minecraft.server.v1_16_R3.NBTTagCompound;
+import net.minecraft.nbt.NBTTagCompound;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
-import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_17_R1.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
@@ -19,7 +19,7 @@ public class SlotIncreaser extends ItemBase {
     public ItemStack CreateItem() {
         ItemStack item = new ItemStack(Material.ENDER_EYE);
 
-        net.minecraft.server.v1_16_R3.ItemStack stack = CraftItemStack.asNMSCopy(item);
+        net.minecraft.world.item.ItemStack stack = CraftItemStack.asNMSCopy(item);
         NBTTagCompound tag = stack.hasTag() ? stack.getTag() : new NBTTagCompound();
         tag.setString("slotIncreaser", "1");
         tag.setString("groupType", "SIMPLE");

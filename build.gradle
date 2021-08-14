@@ -20,7 +20,5 @@ repositories {
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT'
-    implementation files('lib/AdvancedEnchantments-8.0.0-Pre21.5.2.jar')
-    implementation files('lib/craftbukkit-1.16.5.jar')
-
+    implementation files('lib/craftbukkit-1.17.jar')
 }

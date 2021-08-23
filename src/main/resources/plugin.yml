@@ -5,3 +5,13 @@ api-version: 1.17
 author: AppeazeTheCheese
 depend:
   - AdvancedEnchantments
+commands:
+  drain:
+    description: Used to drain souls from an item and turn them into a soul gem
+    default: true
+  split:
+    description: Used to split a soul gem into two pieces
+    default: true
+  combine:
+    description: Combines all soul gems in your inventory into one.
+    default: true
